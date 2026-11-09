@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ProductForm from "../components/ProductForm";
-import { formatarPreco } from "../utils/formatar";
 import styles from "./Pagina.module.css";
 
 export default function Admin({ produtos, onSalvar, onRemover }) {

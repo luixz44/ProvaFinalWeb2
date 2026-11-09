@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
-import { formatarPreco } from "../utils/formatar";
 import styles from "./Pagina.module.css";
 
 export default function Carrinho({ produtos, carrinho, onMudarQtd, onRemover, onLimpar }) {

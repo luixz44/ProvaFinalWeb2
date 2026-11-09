@@ -1,4 +1,3 @@
-import { formatarPreco } from "../utils/formatar";
 import styles from "./ProductCard.module.css";
 
 export default function ProductCard({ produto, onAdicionar }) {
