@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProductForm from "../components/ProductForm";
 import styles from "./Pagina.module.css";
+import { formatarPreco } from '../utils/formatarPreco';
 
 export default function Admin({ produtos, onSalvar, onRemover }) {
   const [emEdicao, setEmEdicao] = useState(null); 
@@ -26,7 +27,7 @@ export default function Admin({ produtos, onSalvar, onRemover }) {
           {produtos.map((produto) => (
             <li key={produto.id} className={styles.linha}>
               <span>
-                <strong>{produto.nome}</strong> — {formatarPreco(produto.preco)}
+                <strong>{produto.nome}</strong> — R$ {Number(produto.preco).toFixed(2)}
               </span>
               <span className={styles.acoes}>
                 <button onClick={() => setEmEdicao(produto)}>Editar</button>

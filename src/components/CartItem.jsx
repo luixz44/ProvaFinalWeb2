@@ -1,4 +1,5 @@
 import styles from "./CartItem.module.css";
+import { formatarPreco } from '../utils/formatarPreco';
 
 export default function CartItem({ produto, qtd, onMais, onMenos, onRemover }) {
   return (
